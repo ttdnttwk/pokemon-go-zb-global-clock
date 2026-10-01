@@ -1,16 +1,23 @@
-# Pokémon GO Global World Clock
+# Global World Clock — v1.1 Hardened
 
-DST-aware static world clock using Thailand (`Asia/Bangkok`) as the reference.
+A read-only static world clock hosted on GitHub Pages. Thailand (`Asia/Bangkok`) is the reference.
 
-## Run locally
-Open `index.html`, or run `python -m http.server 8000` and visit `http://localhost:8000`.
+## Privacy / security design
+- No login or account credentials
+- No backend, database, API calls or WebSocket connections
+- No forms or data submission
+- No cookies, localStorage or sessionStorage
+- No analytics or third-party JavaScript/CDN
+- Strict Content Security Policy (`connect-src 'none'`)
+- IANA time zones and browser `Intl` API for DST-aware clocks
+- Public location data contains city/time-zone metadata only
+- `connected: true` means only that the location belongs to the coverage network; no player/account identifiers are stored
 
-## Publish with GitHub Pages
-1. Create a public repository named `pokemon-go-global-clock`.
-2. Upload all files/folders in this package to the repository root.
-3. Open **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select `main` and `/(root)`, then Save.
-6. Visit `https://YOUR-USERNAME.github.io/pokemon-go-global-clock/`.
+## Deploy
+Upload/replace `index.html`, `style.css`, `app.js`, `data/locations.js`, `.nojekyll`, and this README in the repository root. GitHub Pages can continue publishing from `main` / `(root)`.
 
-Edit `data/locations.js` to change nodes. Use valid IANA time-zone identifiers.
+## Connected locations in v1.1
+Auckland, Osaka, Seoul, Chiang Mai, Mumbai, Munich, London, Mexico City, San Francisco.
+
+## Maintenance
+To add a location, edit `data/locations.js` and use a valid IANA time-zone ID. Never add credentials, usernames, device IDs, account IDs, API keys, precise player locations, or other private data.
