@@ -1,36 +1,10 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#0b0e14">
-  <meta name="referrer" content="no-referrer">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; font-src 'self'; object-src 'none'; frame-src 'none'; media-src 'none'; worker-src 'none'; manifest-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests">
-  <title>Global World Clock</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header>
-  <div>
-    <p class="eyebrow">GLOBAL COVERAGE • READ-ONLY CLOCK</p>
-    <h1>Global World Clock</h1>
-    <p class="sub">Thailand reference • automatic DST via IANA time zones</p>
-  </div>
-  <div id="base" class="base" aria-live="off"></div>
-</header>
-<main>
-  <section class="toolbar" aria-label="Clock filters">
-    <input id="search" type="search" autocomplete="off" spellcheck="false" placeholder="Filter city or country…" aria-label="Filter city or country">
-    <select id="region" aria-label="Filter by region"><option value="">All regions</option></select>
-    <button type="button" data-mode="connected" class="active">Connected</button>
-    <button type="button" data-mode="tier1">Tier 1</button>
-    <button type="button" data-mode="all">All Locations</button>
-  </section>
-  <div class="legend"><span>★ Connected location</span><span>Thailand = reference date/time</span></div>
-  <section id="grid" class="grid" aria-label="World clocks"></section>
-</main>
-<footer>Read-only static clock • no login • no API • no cookies • no analytics • no data submission</footer>
-<script src="data/locations.js"></script>
-<script src="app.js"></script>
-</body>
-</html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b0e14"><meta name="referrer" content="no-referrer"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; font-src 'self'; object-src 'none'; frame-src 'none'; media-src 'none'; worker-src 'none'; manifest-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests"><title>Global World Clock & Event Time Planner</title><link rel="stylesheet" href="style.css"></head><body>
+<header><div><p class="eyebrow">GLOBAL COVERAGE • READ-ONLY</p><h1>World Clock & Event Time Planner</h1><p class="sub">Thailand reference • automatic DST • browser-only calculations</p></div><div id="base" class="base"></div></header>
+<main><section class="toolbar"><input id="search" type="search" autocomplete="off" placeholder="Filter city or country…"><select id="region"><option value="">All regions</option></select><button data-mode="coverage" class="active">Coverage</button><button data-mode="tier1">Tier 1</button><button data-mode="all">All Locations</button></section><div class="legend"><span>★ Coverage Location</span><span>Thailand = reference date/time</span></div>
+<section id="planner" class="planner"><p class="eyebrow">EVENT TIME PLANNER</p><h2>Local event → Thailand time</h2><p id="plannerSummary" class="sub"></p>
+<div class="planner-controls"><div><label>Event date</label><div class="quick"><button id="today">Today</button><button id="nextSaturday" class="active">Next Saturday</button></div><input id="eventDate" type="date"></div>
+<fieldset><legend>Event time</legend><label><input type="radio" name="preset" value="14-17" checked> 14:00–17:00</label><label><input type="radio" name="preset" value="10-20"> 10:00–20:00</label><label><input type="radio" name="preset" value="custom"> Custom</label></fieldset>
+<div id="customTimes" class="custom hidden"><label>Start <input id="customStart" type="time" value="14:00"></label><label>End <input id="customEnd" type="time" value="17:00"></label></div></div>
+<div class="table-wrap"><table><thead><tr><th>Location</th><th>Local Event</th><th>Thailand Time</th><th>TH Day</th></tr></thead><tbody id="plannerRows"></tbody></table></div></section>
+<h2 class="section-title">Current local time</h2><section id="grid" class="grid"></section></main>
+<footer>Static read-only tool • no login • no API • no cookies • no analytics • no data submission</footer><script src="data/locations.js"></script><script src="app.js"></script></body></html>

@@ -1,5 +1,5 @@
 'use strict';
-window.LOCATIONS = Object.freeze([
+window.LOCATIONS=Object.freeze([
   {
     "city": "Auckland",
     "country": "New Zealand",
@@ -7,7 +7,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Pacific/Auckland",
     "region": "Pacific",
     "tier": "Tier 2",
-    "connected": 1
+    "coverage": 1
   },
   {
     "city": "Brisbane",
@@ -16,7 +16,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Australia/Brisbane",
     "region": "Oceania",
     "tier": "Tier 1",
-    "connected": 1
+    "coverage": 0
   },
   {
     "city": "Sydney",
@@ -25,7 +25,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Australia/Sydney",
     "region": "Oceania",
     "tier": "Tier 2",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Melbourne",
@@ -34,7 +34,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Australia/Melbourne",
     "region": "Oceania",
     "tier": "Tier 2",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Tokyo",
@@ -43,7 +43,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Asia/Tokyo",
     "region": "Japan",
     "tier": "Tier 1",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Osaka",
@@ -52,7 +52,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Asia/Tokyo",
     "region": "Japan",
     "tier": "Tier 1",
-    "connected": 1
+    "coverage": 1
   },
   {
     "city": "Sendai / Miyagi",
@@ -61,7 +61,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Asia/Tokyo",
     "region": "Japan",
     "tier": "Tier 1",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Fukuoka",
@@ -70,7 +70,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Asia/Tokyo",
     "region": "Japan",
     "tier": "Tier 2",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Naha / Okinawa",
@@ -79,7 +79,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Asia/Tokyo",
     "region": "Japan",
     "tier": "Tier 2",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Seoul",
@@ -88,7 +88,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Asia/Seoul",
     "region": "Korea",
     "tier": "Tier 1",
-    "connected": 1
+    "coverage": 1
   },
   {
     "city": "Taipei",
@@ -97,7 +97,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Asia/Taipei",
     "region": "East Asia",
     "tier": "Tier 1",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Hong Kong",
@@ -106,7 +106,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Asia/Hong_Kong",
     "region": "East Asia",
     "tier": "Tier 2",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Singapore",
@@ -115,7 +115,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Asia/Singapore",
     "region": "SEA",
     "tier": "Tier 1",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Kuala Lumpur",
@@ -124,7 +124,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Asia/Kuala_Lumpur",
     "region": "SEA",
     "tier": "Tier 1",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Chiang Mai",
@@ -133,7 +133,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Asia/Bangkok",
     "region": "SEA",
     "tier": "Tier 1",
-    "connected": 1
+    "coverage": 1
   },
   {
     "city": "Bangkok",
@@ -142,7 +142,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Asia/Bangkok",
     "region": "SEA",
     "tier": "Tier 1",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Jakarta",
@@ -151,7 +151,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Asia/Jakarta",
     "region": "SEA",
     "tier": "Tier 2",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "New Delhi",
@@ -160,7 +160,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Asia/Kolkata",
     "region": "South Asia",
     "tier": "Tier 2",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Mumbai",
@@ -169,7 +169,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Asia/Kolkata",
     "region": "South Asia",
     "tier": "Tier 1",
-    "connected": 1
+    "coverage": 1
   },
   {
     "city": "Bengaluru",
@@ -178,7 +178,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Asia/Kolkata",
     "region": "South Asia",
     "tier": "Tier 2",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Dubai",
@@ -187,7 +187,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Asia/Dubai",
     "region": "Middle East",
     "tier": "Tier 2",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Johannesburg",
@@ -196,7 +196,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Africa/Johannesburg",
     "region": "Africa",
     "tier": "Tier 2",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Cairo",
@@ -205,7 +205,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Africa/Cairo",
     "region": "Africa",
     "tier": "Tier 3",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Warsaw",
@@ -214,7 +214,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Europe/Warsaw",
     "region": "Europe",
     "tier": "Tier 2",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Munich",
@@ -223,7 +223,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Europe/Berlin",
     "region": "Europe",
     "tier": "Tier 1",
-    "connected": 1
+    "coverage": 1
   },
   {
     "city": "Hamburg",
@@ -232,7 +232,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Europe/Berlin",
     "region": "Europe",
     "tier": "Tier 2",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Berlin",
@@ -241,7 +241,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Europe/Berlin",
     "region": "Europe",
     "tier": "Tier 3",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Paris",
@@ -250,7 +250,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Europe/Paris",
     "region": "Europe",
     "tier": "Tier 1",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Marseille",
@@ -259,7 +259,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Europe/Paris",
     "region": "Europe",
     "tier": "Tier 2",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Barcelona",
@@ -268,7 +268,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Europe/Madrid",
     "region": "Europe",
     "tier": "Tier 1",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Rome",
@@ -277,7 +277,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Europe/Rome",
     "region": "Europe",
     "tier": "Tier 2",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Antwerp",
@@ -286,7 +286,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Europe/Brussels",
     "region": "Europe",
     "tier": "Tier 3",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "London",
@@ -295,7 +295,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Europe/London",
     "region": "Europe",
     "tier": "Tier 1",
-    "connected": 1
+    "coverage": 1
   },
   {
     "city": "Edinburgh",
@@ -304,7 +304,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Europe/London",
     "region": "Europe",
     "tier": "Tier 2",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Lisbon",
@@ -313,7 +313,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Europe/Lisbon",
     "region": "Europe",
     "tier": "Tier 1",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "São Paulo",
@@ -322,7 +322,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "America/Sao_Paulo",
     "region": "South America",
     "tier": "Tier 1",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Rio de Janeiro",
@@ -331,7 +331,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "America/Sao_Paulo",
     "region": "South America",
     "tier": "Tier 1",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Buenos Aires",
@@ -340,7 +340,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "America/Argentina/Buenos_Aires",
     "region": "South America",
     "tier": "Tier 2",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Santiago",
@@ -349,7 +349,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "America/Santiago",
     "region": "South America",
     "tier": "Tier 2",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Lima",
@@ -358,7 +358,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "America/Lima",
     "region": "South America",
     "tier": "Tier 2",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "New York City",
@@ -367,7 +367,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "America/New_York",
     "region": "North America",
     "tier": "Tier 1",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Atlanta",
@@ -376,7 +376,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "America/New_York",
     "region": "North America",
     "tier": "Tier 2",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Chicago",
@@ -385,7 +385,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "America/Chicago",
     "region": "North America",
     "tier": "Tier 1",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Dallas–Fort Worth",
@@ -394,7 +394,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "America/Chicago",
     "region": "North America",
     "tier": "Tier 1",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Mexico City",
@@ -403,7 +403,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "America/Mexico_City",
     "region": "North America",
     "tier": "Tier 1",
-    "connected": 1
+    "coverage": 1
   },
   {
     "city": "Denver",
@@ -412,7 +412,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "America/Denver",
     "region": "North America",
     "tier": "Tier 1",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "San Francisco",
@@ -421,7 +421,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "America/Los_Angeles",
     "region": "North America",
     "tier": "Tier 1",
-    "connected": 1
+    "coverage": 1
   },
   {
     "city": "Los Angeles",
@@ -430,7 +430,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "America/Los_Angeles",
     "region": "North America",
     "tier": "Tier 1",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Seattle",
@@ -439,7 +439,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "America/Los_Angeles",
     "region": "North America",
     "tier": "Tier 2",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Vancouver",
@@ -448,7 +448,7 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "America/Vancouver",
     "region": "North America",
     "tier": "Tier 2",
-    "connected": 0
+    "coverage": 0
   },
   {
     "city": "Honolulu",
@@ -457,6 +457,6 @@ window.LOCATIONS = Object.freeze([
     "timeZone": "Pacific/Honolulu",
     "region": "Pacific",
     "tier": "Tier 1",
-    "connected": 0
+    "coverage": 0
   }
 ]);

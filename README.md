@@ -1,23 +1,20 @@
-# Global World Clock — v1.1 Hardened
+# Global World Clock & Event Time Planner — V1.2
 
-A read-only static world clock hosted on GitHub Pages. Thailand (`Asia/Bangkok`) is the reference.
+Read-only static GitHub Pages tool using Thailand (`Asia/Bangkok`) as reference.
 
-## Privacy / security design
-- No login or account credentials
-- No backend, database, API calls or WebSocket connections
-- No forms or data submission
-- No cookies, localStorage or sessionStorage
-- No analytics or third-party JavaScript/CDN
-- Strict Content Security Policy (`connect-src 'none'`)
-- IANA time zones and browser `Intl` API for DST-aware clocks
-- Public location data contains city/time-zone metadata only
-- `connected: true` means only that the location belongs to the coverage network; no player/account identifiers are stored
+## Features
+- HH:MM clocks, no seconds; refresh every 30 seconds
+- Coverage / Tier 1 / All Locations
+- 9 Coverage Locations
+- Planner on Coverage and Tier 1
+- Next Saturday default; Today quick-select; date picker
+- 14:00–17:00 default, 10:00–20:00 preset, Custom start/end
+- Selected local date/time converted to Thailand using IANA zones and the selected date (DST-aware)
+- Planner ordered by Thailand planning sequence
+- No API, backend, login, cookies, analytics, storage, telemetry, or third-party dependencies
+- CSP blocks outbound connections (`connect-src 'none'`)
 
 ## Deploy
-Upload/replace `index.html`, `style.css`, `app.js`, `data/locations.js`, `.nojekyll`, and this README in the repository root. GitHub Pages can continue publishing from `main` / `(root)`.
+Replace the repository-root files with this package. Keep GitHub Pages on `main` → `/(root)`.
 
-## Connected locations in v1.1
-Auckland, Osaka, Seoul, Chiang Mai, Mumbai, Munich, London, Mexico City, San Francisco.
-
-## Maintenance
-To add a location, edit `data/locations.js` and use a valid IANA time-zone ID. Never add credentials, usernames, device IDs, account IDs, API keys, precise player locations, or other private data.
+Never add player usernames, account IDs, credentials, API keys, device identifiers, or precise player locations.
