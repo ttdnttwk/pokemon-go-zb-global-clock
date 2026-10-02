@@ -5,7 +5,7 @@ Read-only static GitHub Pages tool using Thailand (`Asia/Bangkok`) as reference.
 ## Features
 - HH:MM clocks, no seconds; refresh every 30 seconds
 - Coverage / Tier 1 / All Locations
-- 9 Coverage Locations
+- 10 Coverage Locations
 - Planner on Coverage and Tier 1
 - Next Saturday default; Today quick-select; date picker
 - 14:00–17:00 default, 10:00–20:00 preset, Custom start/end
