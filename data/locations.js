@@ -16,7 +16,7 @@ window.LOCATIONS=Object.freeze([
     "timeZone": "Australia/Brisbane",
     "region": "Oceania",
     "tier": "Tier 1",
-    "coverage": 0
+    "coverage": 1
   },
   {
     "city": "Sydney",
